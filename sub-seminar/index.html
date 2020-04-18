@@ -3,84 +3,95 @@
     <head>
         <meta charset="utf-8" />
         <title>My Page</title>
-        <style>
-            img {
-                width: 300px;
-            }
-        </style>
-        <link rel="stylesheet" type="text/css" href="#"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- HEADER -->
         <header>
-            <h1>My Page</h1>
-            <ul>
-                <li><a href="#profile">프로필 소개</a></li>
-                <li><a href="#video">관련 영상</a></li>
-                <li><a href="#favorite-words">좋아하는 글귀</a></li>
-                <li><a href="#favorite-foods">좋아하는 음식</a></li>
-            </ul>
-            
+            <div class="inner">
+                <div class="logo-group">
+                    <img class="logo" src="images/logo.jpg" >
+                    <h1 class="logo-title">My Page</h1>
+                </div>
+                <div class="menu-group">
+                    <ul class="menus">
+                        <li><a href="#profile">프로필 소개</a></li>
+                        <li><a href="#video">관련 영상</a></li>
+                        <li><a href="#favorite-words">좋아하는 글귀</a></li>
+                        <li><a href="#favorite-foods">좋아하는 음식</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
 
         <!-- PROFILE SECTION -->
-        <section id="profile">
+        <section class="profile-section" id="profile">
             <div class="section-title"><h1>프로필 소개</h1></div>
-            <div>
+            <div class="inner">
                 <span>내 이름은 로켓</span>
                 <span>, 가디언즈오브갤러시</span>
                 <div>div 태그</div>
                 <img src="images/rocket.jpg" alt="">
 
                 <form method="POST" action="#">
-                    <input type="text" maxlength="30">
+                    댓글을 남겨주세요 : <input type="text" maxlength="30">
                     <button type="submit">확인</button> 
                 </form>
             </div>
         </section>
 
         <!-- VIDEO SECTION -->
-        <section id="video">
+        <section class="video-section" id="video">
             <div class="section-title"><h1>관련 영상</h1></div>
-            <iframe 
-                width="560" 
-                height="315" 
-                src="http://www.youtube.com/embed/VAoBIpxYfBE" 
-                frameborder="0" 
-                allow="autoplay; encrypted-media" 
-                allowfullscreen>
-            </iframe>
+            <div class="inner">
+                <iframe 
+                    class="video"
+                    width="560" 
+                    height="315" 
+                    src="http://www.youtube.com/embed/VAoBIpxYfBE" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </section>
         
         <!-- FAVORITE WORDS SECTION -->
-        <summary id="favorite-words">
+        <summary class="favorite-words-section" id="favorite-words">
             <div class="section-title"><h1>좋아하는 글귀</h1></div>
-            <p>
-                피가 낙원을 우리 가장 별과 곳이 뿐이다. <br>
-                그들은 목숨을 끓는 뭇 같이 <strong>힘차게</strong> 대중을 거친 뿐이다. <br>
-                창공에 못하다 능히 커다란 피어나기 꽃이 황금시대다. 
-                예가 인간은 들어 청춘 용감하고 이상이 사는가 날카로우나 보라. <br>
-                되려니와, 인류의 더운지라 이상은 <i>청춘 사랑의</i> 굳세게 우리의 교향악이다. 
-                주는 뼈 싶이 긴지라 길을 그들은 이것이다. <br>
-                얼음과 인류의 할지라도 무엇을 별과 석가는 황금시대다.
-            </p>
+            <div class="inner">
+                <p>
+                    피가 낙원을 우리 가장 별과 곳이 뿐이다. <br>
+                    그들은 목숨을 끓는 뭇 같이 <strong>힘차게</strong> 대중을 거친 뿐이다. <br>
+                    창공에 못하다 능히 커다란 피어나기 꽃이 황금시대다. 
+                    예가 인간은 들어 청춘 용감하고 이상이 사는가 날카로우나 보라. <br>
+                    되려니와, 인류의 더운지라 이상은 <i>청춘 사랑의</i> 굳세게 우리의 교향악이다. 
+                    주는 뼈 싶이 긴지라 길을 그들은 이것이다. <br>
+                    얼음과 인류의 할지라도 무엇을 별과 석가는 황금시대다.
+                </p>
+            </div>
         </summary>
 
         <!-- FAVORITE FOODS SECTION -->
-        <section id="favorite-foods">
+        <section class="favorite-foods-section" id="favorite-foods">
             <div class="section-title"><h1>좋아하는 음식</h1></div>
-            <ol>
-                <li>치킨</li>
-                <li>샤브샤브</li>
-                <li>삼겹살</li>
-                <li>자장면</li>
-            </ol>
+            <div class="inner"> 
+                <ol>
+                    <li>치킨</li>
+                    <li>샤브샤브</li>
+                    <li>삼겹살</li>
+                    <li>자장면</li>
+                </ol>
+            </div>
         </section>
 
         <!-- FOOTER -->
         <footer>
-            <span>created by yeonseok</span>
-            <span>010-xxxx-xxxx</span>
+            <div class="inner">
+                <span id="creator">created by yeonseok</span>
+                <span id="phone">010-xxxx-xxxx</span>
+            </div>
         </footer>
     </body>
 </html>
